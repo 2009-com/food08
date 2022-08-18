@@ -1,13 +1,47 @@
 {
-    "pages": [
-        "pages/index/index"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "Weixin",
-        "navigationBarTextStyle": "black"
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/detail/index",
+    "pages/page/page",
+    "pages/cart/cart",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "color": "#ccc",
+    "selectedColor": "#f00",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/page/page",
+        "text": "主页",
+        "iconPath": "/images/detail/下载.png",
+        "selectedIconPath": "/images/detail/ia_100000097.png"
+      },{
+        "pagePath": "pages/detail/index",
+        "text": "分类",
+        "iconPath": "/images/detail/ia_100000098.png",
+        "selectedIconPath": "/images/detail/下载 (1).png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/images/detail/ia_100000099.png",
+        "selectedIconPath": "/images/detail/下载 (2).png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/detail/ia_100000100.png",
+        "selectedIconPath": "/images/detail/下载 (3).png"
+      }
+    ]
+  }
 }
