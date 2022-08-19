@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    noselect: "/images/cart/circle@noselected.png",
+    select: "/images/cart/circle@selected.png",
+    all: false,
+    isAll: false,
+    num: 1,
   },
 
   /**
@@ -15,52 +19,37 @@ Page({
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  // 点击选中按钮
+  onSelect(){
+    if(!this.data.all){
+        this.setData({
+            all: true,
+        })
+    }else{
+        this.setData({
+            all: false,
+        })
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
-
+  // 点击 + 按钮
+  add(){
+      this.setData({
+        num: this.data.num += 1
+      })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
+  // 点击 - 按钮
+  del(){
+    if(this.data.num<=1){
+        this.setData({
+            num: 1,
+        })
+    }else{
+        this.setData({
+            num: this.data.num -= 1
+        })
+    }
+    
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
 })
