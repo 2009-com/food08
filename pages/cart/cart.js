@@ -1,4 +1,5 @@
 // pages/cart/cart.js
+import { data } from "../../data/data";
 Page({
 
   /**
@@ -16,7 +17,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.log(options.id);
+    const id = options.id;
+    const res = data.goodsList.find(item=>{
+        return item.goodsId == id;
+    })
+    console.log(res);
+    this.setData({ res });
   },
 
   // 点击选中按钮

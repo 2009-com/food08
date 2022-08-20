@@ -19,6 +19,12 @@ Page({
     })
     this.setData({res});
   },
+  toCart(e){
+    const id = e.mark.id;
+    wx.reLaunch({
+      url: '/pages/cart/cart?id=' + id,
+    })
+  },
   
   
 })

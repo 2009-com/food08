@@ -3,31 +3,99 @@
   <icon type="search"></icon>
   <input type="text" class="input" placeholder="搜索中酒网商品/店铺"/>
 </view>
-<scroll-view scroll-x class="scroll">
+
+<view class="tab">
   <view class="drink_box">
     <block wx:for="{{list}}" wx:key="index">
-      <view class="item_drink">{{item}}</view>
+      <view bind:tap="onTab" mark:index="{{index}}" class="item_drink {{index==curIndex?'active':''}}">{{item}}</view>
     </block>
   </view>
-</scroll-view>
+</view>
+
+
 <view class="main">
-  <view class="left">
-    <block>
-      <text></text>
-    </block>
-  </view>
-  <view class="right">
-    <!-- <block> -->
+  <view hidden="{{curIndex!=0}}" class="right">
+    <block wx:for="{{drink.bj}}" wx:key="index"> 
       <view class="rig_drink">
-        <image src="/images/ia_100000002254.png" class="drinkImg"></image>
+        <image src="{{item.goodsImg}}" class="drinkImg"></image>
         <view class="drink_title">
-          <view class="top">3123</view>
+          <view class="top">{{item.goodsTxt}}</view>
           <view class="bottom">
-            <text class="price">￥313213</text>
+            <text class="price">￥{{item.price}}</text>
             <image src="/images/cart/购物车填充.png" class="addCart" bindtap="addCart"></image>
           </view>
         </view>
       </view>
-    <!-- </block> -->
+    </block>
+  </view>
+  <view hidden="{{curIndex!=1}}" class="right">
+    <block wx:for="{{drink.ptj}}" wx:key="index"> 
+      <view class="rig_drink">
+        <image src="{{item.goodsImg}}" class="drinkImg"></image>
+        <view class="drink_title">
+          <view class="top">{{item.goodsTxt}}</view>
+          <view class="bottom">
+            <text class="price">￥{{item.price}}</text>
+            <image src="/images/cart/购物车填充.png" class="addCart" bindtap="addCart"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view hidden="{{curIndex!=2}}" class="right">
+    <block wx:for="{{drink.pj}}" wx:key="index"> 
+      <view class="rig_drink">
+        <image src="{{item.goodsImg}}" class="drinkImg"></image>
+        <view class="drink_title">
+          <view class="top">{{item.goodsTxt}}</view>
+          <view class="bottom">
+            <text class="price">￥{{item.price}}</text>
+            <image src="/images/cart/购物车填充.png" class="addCart" bindtap="addCart"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view hidden="{{curIndex!=3}}" class="right">
+    <block wx:for="{{drink.yj}}" wx:key="index"> 
+      <view class="rig_drink">
+        <image src="{{item.goodsImg}}" class="drinkImg"></image>
+        <view class="drink_title">
+          <view class="top">{{item.goodsTxt}}</view>
+          <view class="bottom">
+            <text class="price">￥{{item.price}}</text>
+            <image src="/images/cart/购物车填充.png" class="addCart" bindtap="addCart"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view hidden="{{curIndex!=4}}" class="right">
+    <block wx:for="{{drink.gj}}" wx:key="index"> 
+      <view class="rig_drink">
+        <image src="{{item.goodsImg}}" class="drinkImg"></image>
+        <view class="drink_title">
+          <view class="top">{{item.goodsTxt}}</view>
+          <view class="bottom">
+            <text class="price">￥{{item.price}}</text>
+            <image src="/images/cart/购物车填充.png" class="addCart" bindtap="addCart"></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view hidden="{{curIndex!=5}}" class="right">
+    <block wx:for="{{drink.qt}}" wx:key="index"> 
+      <view class="rig_drink">
+        <image src="{{item.goodsImg}}" class="drinkImg"></image>
+        <view class="drink_title">
+          <view class="top">{{item.goodsTxt}}</view>
+          <view class="bottom">
+            <text class="price">￥{{item.price}}</text>
+            <image src="/images/cart/购物车填充.png" class="addCart" bindtap="addCart"></image>
+          </view>
+        </view>
+      </view>
+    </block>
   </view>
 </view>

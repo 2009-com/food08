@@ -1,11 +1,14 @@
 // pages/cate/cate.js
+import { drink } from "../../data/cate";
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: ["白酒","葡萄酒","啤酒","洋酒","黄酒","保健酒","果酒","冰酒","酒具","其他"]
+    list: ["白酒","葡萄酒","啤酒","洋酒","果酒","其他"],
+    drink,
+    curIndex: 0,
   },
 
   /**
@@ -13,6 +16,13 @@ Page({
    */
   onLoad(options) {
 
+  },
+  onTab(e){
+    const index = e.mark.index;
+    console.log(index);
+    this.setData({
+      curIndex: index,
+    })
   },
   // 加入购物车
   addCart(){

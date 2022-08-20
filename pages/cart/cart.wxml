@@ -2,22 +2,13 @@
 <view class="box">
   <!-- <block> -->
       <view class="item_box">
-        <view class="header">
-          <view class="left">
-            <image src="{{isAll?select:noselect}}" class="selectImg"></image>
-            <image src="/images/cart/_店铺.png" class="shopImg"></image>
-            <text class="shop_name">31231232313213</text>
-            <image src="/images/cart/右.png" class="you"></image>
-          </view>
-          <view class="right">领劵</view> 
-        </view>
         <view class="bottom">
             <image bindtap="onSelect" src="{{all?select:noselect}}" class="selectImg"></image>
-            <image src="/images/ia_100000002266.png" class="drinkImg"></image>
+            <image src="{{res.goodsImg}}" class="drinkImg"></image>
             <view class="item_title">
-                <text class="title">31231231232131fsdfdsf</text>
+                <text class="title">{{res.goodsTxt}}</text>
                 <view class="price_box">
-                    <text class="price">￥3123</text>
+                    <text class="price">￥{{res.price}}</text>
                     <view class="cart_box">
                         <image bindtap="del" src="/images/cart/减少.png" class="delImg"></image>
                         <text class="num">{{num}}</text>

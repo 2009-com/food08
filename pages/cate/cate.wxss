@@ -15,60 +15,68 @@
   width: 30rpx;
   height: 30rpx;
 }
-.scroll{
+.tab{
   width: 100vw;
-  height: 60rpx;
+  height: 80rpx;
+  background: #fff;
   margin-top: 20rpx;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;/*距离顶部多少吸顶*/
 }
 .drink_box{
   width: 100%;
-  height: 60rpx;
+  height: 80rpx;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  font-size: 24rpx;
+  font-size: 36rpx;
 }
 .item_drink{
-  margin-left: 30rpx;
+  width: 120rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
   white-space: nowrap;
 }
+.item_drink.active{
+  color: #f23030;
+  border-bottom: 1rpx solid  #f23030;
+}
+
 .main{
   width: 100vw;
   display: flex;
 }
-.left{
-  width: 140rpx;
+.right{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #fff;
   display: flex;
   flex-direction: column;
-  text-align: center;
-}
-.left text{
-  width: 100%;
-  line-height: 80rpx;
-}
-.right{
-  width: calc( 100% - 140rpx );
-  background: red;
 }
 .rig_drink{
   width: 100%;
-  height: 300rpx;
-  background: #fff;
-  padding: 20rpx;
+  padding: 30rpx 10rpx;
   box-sizing: border-box;
   display: flex;
-  border-bottom: 1rpx solid #eee;
+  border-bottom: 1rpx solid #ccc;
 }
 .drinkImg{
   width: 200rpx;
   height: 200rpx;
+  margin-right: 20rpx;
 }
 .drink_title{
-  width: calc( 100% - 200rpx );
-  height: 260rpx;
+  flex: 1;
+  height: 200rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 10rpx;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
 }
 .bottom{
   display: flex;
