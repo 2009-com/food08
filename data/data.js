@@ -1,0 +1,145 @@
+const data = {
+    "swiper":[
+        {SwiperImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200915/6373578240713520556752518.jpg'},{SwiperImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20210610/6375894232144268163500414.jpg'},{SwiperImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20220616/6379098720253600953303098.png'}
+    ],
+    "select":[
+        {
+            selectId:1,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685115219031939865879.png',
+            selectTxt:"精品推荐"
+        },
+        {
+            selectId:2,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685117032155146603601.png',
+            selectTxt:"逛好店"
+        },
+        {
+            selectId:3,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200508/6372454562711765272468346.png',
+            selectTxt:"白酒专区"
+        },
+        {
+            selectId:4,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685118712678114194268.png',
+            selectTxt:"红酒专区"
+        },
+        {
+            selectId:5,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685120900401994517848.png',
+            selectTxt:"洋酒专区"
+        },
+        {
+            selectId:6,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685122733905249784521.png',
+            selectTxt:"超值拼团"
+        },
+        {
+            selectId:7,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685123529806656042324.png',
+            selectTxt:"限时秒杀"
+        },
+        {
+            selectId:8,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200508/6372454562702417101496530.png',
+            selectTxt:"天佑德"
+        },
+        {
+            selectId:9,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685125609690337532647.png',
+            selectTxt:"积分兑换"
+        },
+        {
+            selectId:10,
+            selectImg:'https://img6.zhongjiu.cn/resourceb2b2c/Storage/template/0/20200209/6371685126630332149485149.png',
+            selectTxt:"领券中心"
+        },
+    ],
+    "goodsList":[
+        {
+            "goodsId":'01',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/3878/1_350.png?time=2022081916',
+            "goodsTxt":"52°西凤出口型白西凤绵柔凤香型500ml×6瓶装",
+            "price":948
+        },
+        {
+            "goodsId":'02',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/80058/1_350.png?time=2022081916',
+            "goodsTxt":"52度五粮液永不分离精品 500ml*6瓶装",
+            "price":299
+        },
+        {
+            "goodsId":'03',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/675/1_350.png?time=2022081916',
+            "goodsTxt":"52°剑南春500ml",
+            "price":499
+        },
+        {
+            "goodsId":'04',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/412/1_350.png?time=2022081916',
+            "goodsTxt":"53°郎酒十年红花郎500ml",
+            "price":418
+        },
+        {
+            "goodsId":'05',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/1594/1_350.png?time=2022081916',
+            "goodsTxt":"43度茅台酒股份公司迎宾酒 500ml",
+            "price":108
+        },
+        {
+            "goodsId":'06',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/862/1_350.png?time=2022081916',
+            "goodsTxt":"40°杰克丹尼威士忌700ml",
+            "price":155
+        },
+        {
+            "goodsId":'07',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/408/1_350.png?time=2022081916',
+            "goodsTxt":"53度茅台酒股份公司王子-酱门经典（新包装） 500ml",
+            "price":538
+        },
+        {
+            "goodsId":'08',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/3593/1_350.png?time=2022081916',
+            "goodsTxt":"53度茅台王子酒 500ml*6瓶",
+            "price":1678
+        },
+        {
+            "goodsId":'09',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/422/1_350.png?time=2022081916',
+            "goodsTxt":"42度洋河海之蓝 480ml",
+            "price":143
+        },
+        {
+            "goodsId":'010',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/4014/1_350.png?time=2022081916',
+            "goodsTxt":"43度茅台迎宾酒 500ml*6瓶",
+            "price":648
+        },
+        {
+            "goodsId":'011',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/2101/1_350.png?time=2022081916',
+            "goodsTxt":"拉菲珍藏波尔多干红葡萄酒 750ml",
+            "price":129
+        },
+        {
+            "goodsId":'012',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/2466/1_350.png?time=2022081916',
+            "goodsTxt":"52度洋河海之蓝 480ml",
+            "price":156
+        },
+        {
+            "goodsId":'013',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/2232/1_350.png?time=2022081916',
+            "goodsTxt":"52度泸州老窖头曲 500ml",
+            "price":88
+        },
+        {
+            'goodsId':'014',
+            "goodsImg":'https://api.mall1.zhongjiu.cn/Storage/Shop/1/Products/794/1_350.png?time=2022081916',
+            "goodsTxt":"40°深蓝牌SKYY原味伏特加 750ml",
+            "price":69
+        },
+    ],
+};
+
+export { data }

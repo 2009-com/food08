@@ -1,12 +1,11 @@
-// pages/page/page.js
-import { data } from "../../data/data";
+// pages/cate/cate.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    data,
+    list: ["白酒","葡萄酒","啤酒","洋酒","黄酒","保健酒","果酒","冰酒","酒具","其他"]
   },
 
   /**
@@ -15,10 +14,10 @@ Page({
   onLoad(options) {
 
   },
-  toDetail(e){
-    const id = e.mark.id;
-    wx.navigateTo({
-      url: '/pages/detail/index?id=' + id,
+  // 加入购物车
+  addCart(){
+    wx.reLaunch({
+      url: "/pages/cart/cart"
     })
   },
 

@@ -1,1 +1,95 @@
 /* pages/page/page.wxss */
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: red;
+}
+.header view:nth-child(1){
+  color: #fff;
+}
+.search{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  padding: 10rpx 20rpx;
+  background: #fff;
+  border-radius: 40rpx;
+}
+.search input{
+  margin-left: 10rpx;
+}
+
+.swiper{
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.swiper swiper-item{
+  border-radius: 20rpx;
+}
+.swiper image{
+  width: 100%;
+  height: 400rpx;
+  border-radius: 20rpx;
+}
+
+.tab{
+  width: 100%;
+  height: 360rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.tab_item{
+  width: 18%;
+  text-align: center;
+  margin: 10rpx 0;
+}
+.tab_item image{
+  width: 96rpx;
+  height: 96rpx;
+}
+.tab_item text{
+  display: block;
+  font-size: 28rpx;
+}
+
+.list{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list_item{
+  width: 345rpx;
+  height: 480rpx;
+  background: #fff;
+  margin: 10rpx 0;
+  position: relative;
+}
+.list_item image{
+  width: 340rpx;
+  height: 350rpx;
+}
+.list_item text{
+  display: block;
+  line-height: 32rpx;
+  padding: 0 20rpx;
+  font-size: 24rpx;
+}
+.list_item text:nth-child(3){
+  color: red;
+  font-size: 30rpx;
+  position: absolute;
+  bottom: 20rpx;
+}

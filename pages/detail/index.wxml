@@ -1,33 +1,8 @@
 <!--pages/detail/index.wxml-->
-<view class="search">
-  <icon type="search"></icon>
-  <input type="text" class="input" placeholder="搜索中酒网商品/店铺"/>
-</view>
-<scroll-view scroll-x class="scroll">
-  <view class="drink_box">
-    <block wx:for="{{list}}" wx:key="index">
-      <view class="item_drink">{{item}}</view>
-    </block>
-  </view>
-</scroll-view>
-<view class="main">
-  <view class="left">
-    <block>
-      <text></text>
-    </block>
-  </view>
-  <view class="right">
-    <!-- <block> -->
-      <view class="rig_drink">
-        <image src="/images/ia_100000002254.png" class="drinkImg"></image>
-        <view class="drink_title">
-          <view class="top">3123</view>
-          <view class="bottom">
-            <text class="price">￥313213</text>
-            <image src="/images/cart/购物车填充.png" class="addCart" bindtap="addCart"></image>
-          </view>
-        </view>
-      </view>
-    <!-- </block> -->
+<view class="box">
+  <image class="img" src="{{res.goodsImg}}"></image>
+  <view class="dic">
+    <text class="price">￥{{res.price}}.00</text>
+    <text class="txt">{{res.goodsTxt}}</text>
   </view>
 </view>

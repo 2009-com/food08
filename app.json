@@ -4,7 +4,8 @@
     "pages/detail/index",
     "pages/page/page",
     "pages/cart/cart",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/cate/cate"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,7 +15,7 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "tabBar":{
+  "tabBar": {
     "color": "#ccc",
     "selectedColor": "#f00",
     "backgroundColor": "#ffffff",
@@ -24,8 +25,9 @@
         "text": "主页",
         "iconPath": "/images/detail/下载.png",
         "selectedIconPath": "/images/detail/ia_100000097.png"
-      },{
-        "pagePath": "pages/detail/index",
+      },
+      {
+        "pagePath": "pages/cate/cate",
         "text": "分类",
         "iconPath": "/images/detail/ia_100000098.png",
         "selectedIconPath": "/images/detail/下载 (1).png"

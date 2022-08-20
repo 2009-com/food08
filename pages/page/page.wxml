@@ -1,2 +1,32 @@
 <!--pages/page/page.wxml-->
-<text>pages/page/page.wxml</text>
+<view class="header">
+  <view>附近店铺</view>
+  <view class="search">
+    <icon type="search"></icon>
+    <input type="text" placeholder="搜索中酒网商品/店铺" />
+  </view>
+</view>
+<swiper circular autoplay 	indicator-dots indicator-color="#ccc" indicator-active-color="#fff" class="swiper">
+  <block wx:for="{{data.swiper}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item.SwiperImg}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="tab">
+  <block wx:for="{{data.select}}" wx:key="index">
+    <view class="tab_item">
+      <image src="{{item.selectImg}}"></image>
+      <text>{{item.selectTxt}}</text>
+    </view>
+  </block>
+</view>
+<view class="list">
+  <block wx:for="{{data.goodsList}}" wx:key="index">
+    <view bind:tap="toDetail" mark:id="{{item.goodsId}}" class="list_item">
+      <image src="{{item.goodsImg}}"></image>
+      <text>{{item.goodsTxt}}</text>
+      <text>￥{{item.price}}</text>
+    </view>
+  </block>
+</view>
