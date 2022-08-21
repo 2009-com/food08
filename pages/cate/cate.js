@@ -19,7 +19,6 @@ Page({
   },
   onTab(e){
     const index = e.mark.index;
-    console.log(index);
     this.setData({
       curIndex: index,
     })

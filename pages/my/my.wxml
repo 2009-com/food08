@@ -1,2 +1,34 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="header">
+  <image></image>
+  <text></text>
+</view>
+<view class="dd">
+  <view class="myDd">我的订单</view>
+  <view></view>
+</view>
+<view class="fuwu">
+  <view class="f_item">
+    <image src="/images/my/2db6aabb884b225afb7ec2a9544314a.png"></image>
+    <text>我的余额</text>
+  </view>
+  <view class="f_item">
+    <image src="/images/my/815cbf6c19d50adeb715583d3377fdb.png"></image>
+    <text>我的积分</text>
+  </view>
+  <view class="f_item">
+    <image src="/images/my/6c20562bb1aea520196acada3fcca3b.png"></image>
+    <text>拼团返现</text>
+  </view>
+  <view class="f_item">
+    <image src="/images/my/6a7effce3857fc479daa69a6c8cadaa.png"></image>
+    <text>公司证照</text>
+  </view>
+  <view class="f_item">
+    <image src="/images/my/ea563a0ed3d62084915c5a4ea34a85b.png"></image>
+    <text>联系客服</text>
+  </view>
+</view>
+<view class="tg">
+  申请为推广员
+</view>
