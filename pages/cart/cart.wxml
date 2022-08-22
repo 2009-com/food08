@@ -1,28 +1,32 @@
 <!--pages/cart/cart.wxml-->
 <view class="box">
-  <!-- <block> -->
-      <view class="item_box">
+  <block wx:for="{{cartData}}" wx:key="index">
+      <view class="item_box" >
         <view class="bottom">
-            <image bindtap="onSelect" src="{{all?select:noselect}}" class="selectImg"></image>
-            <image src="{{res.goodsImg}}" class="drinkImg"></image>
+            <image bindtap="onSelect" mark:index="{{index}}"  src="{{all?select:noselect}}" class="selectImg"></image>
+            <image src="{{item.goodsImg}}" class="drinkImg"></image>
             <view class="item_title">
-                <text class="title">{{res.goodsTxt}}</text>
+                <text class="title">{{item.goodsTxt}}</text>
                 <view class="price_box">
-                    <text class="price">￥{{res.price}}</text>
+                    <text class="price">￥{{item.price}}</text>
                     <view class="cart_box">
-                        <image bindtap="del" src="/images/cart/减少.png" class="delImg"></image>
+                        <image bindtap="onCut" src="/images/cart/减少.png" class="delImg"></image>
                         <text class="num">{{num}}</text>
-                        <image bindtap="add" src="/images/cart/加.png" class="addImg"></image>
+                        <image bindtap="onAdd" mark:id="{{item.goodsId}}" src="/images/cart/加.png" class="addImg"></image>
                     </view>
                 </view>
             </view>
         </view>
       </view>
-  <!-- </block> -->
+  </block>
 </view>
 <view class="footer">
-  <view class="f_left">
+  <view bindtap="onAllSelect" class="f_left">
     <image src="{{isAll?select:noselect}}" class="selectImg"></image>
+    全选
   </view>
-  <view class="f_right"></view>
+  <view class="f_right">
+    <view class="price">总价￥{{sum}}</view>
+    <view>去结算</view>
+  </view>
 </view>

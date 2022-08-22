@@ -1,5 +1,7 @@
 // pages/cart/cart.js
 import { data } from "../../data/data";
+// 从缓存中取购物车数据
+let cartData = wx.getStorageSync("cart");
 Page({
 
   /**
@@ -11,52 +13,80 @@ Page({
     all: false,
     isAll: false,
     num: 1,
+    sum: 0,
+    cartData,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    console.log(options.id);
     const id = options.id;
     const res = data.goodsList.find(item=>{
         return item.goodsId == id;
     })
-    console.log(res);
-    this.setData({ res });
+    const cart = this.data.cartData.find(item=>{
+      return item.id == this.data.cartData.goodsId
+    })
+    this.setData({ 
+        res,
+        cart,
+        sum: cart.price * this.data.num,
+    });
   },
 
-  // 点击选中按钮
-  onSelect(){
-    if(!this.data.all){
+
+  // 点击全选按钮
+  onAllSelect(){
+      if(!this.data.isAll){
         this.setData({
-            all: true,
+          isAll: true,
+          all: true,
         })
-    }else{
+      }else{
         this.setData({
-            all: false,
+          isAll: false,
+          all: false,
         })
-    }
+      }
   },
+
+  onSelect(e){
+      const index = e.mark.index
+      console.log(index)
+    if(!this.data.all){
+      this.setData({
+        all: true,
+      })
+    }else{
+      this.setData({
+        all: false,
+      })
+    }
+},
 
   // 点击 + 按钮
-  add(){
+  onAdd(e){
+      console.log(e.mark.index)
       this.setData({
-        num: this.data.num += 1
+        num: this.data.num += 1,
+        sum: this.data.num * this.data.cart.price
       })
   },
 
   // 点击 - 按钮
-  del(){
+  onCut(e){
+    const id = e.mark.id
+    console.log(id)
     if(this.data.num<=1){
         this.setData({
             num: 1,
         })
     }else{
         this.setData({
-            num: this.data.num -= 1
+            num: this.data.num -= 1,
+            sum: this.data.num * this.data.cart.price
         })
     }
-    
-  },
+    }
 })

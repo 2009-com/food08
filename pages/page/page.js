@@ -13,12 +13,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    console.log(this.data.data)
   },
   toDetail(e){
     const id = e.mark.id;
     wx.navigateTo({
-      url: '/pages/detail/index?id=' + id,
+      url: '/pages/detail/index?id='+id,
     })
   },
 

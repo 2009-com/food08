@@ -16,7 +16,7 @@
       <image src="/images/cart/_店铺.png"></image>
       <text>店铺</text>
     </view>
-    <view>
+    <view bindtap="toGet">
       <image src="/images/cart/购物车填充.png"></image>
       <text>购物车</text>
     </view>
